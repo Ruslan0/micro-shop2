@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import store.microservices.exceptions.ProductNotFoundException;
+import store.microservices.exceptions.ShopNotFoundProductException;
 import store.microservices.shop.Product;
 import store.microservices.shop.ShopController;
 
@@ -35,7 +35,7 @@ public abstract class AbstractShopControllerTests {
 			Logger.getGlobal().info("Start validProductNumber test");
 			Product Product = shopController.byProductName("yuis");
 			Assert.fail("Expected an ProductNotFoundException");
-		} catch (ProductNotFoundException e) {
+		} catch (ShopNotFoundProductException e) {
 			// Worked!
 		}
 	}

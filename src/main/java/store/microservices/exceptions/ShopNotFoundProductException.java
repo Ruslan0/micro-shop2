@@ -11,11 +11,11 @@ import org.springframework.http.HttpStatus;
  * @author Ruslan Paluektau
  */
 @ResponseStatus(HttpStatus.NOT_FOUND)
-public class ProductNotFoundException extends RuntimeException {
+public class ShopNotFoundProductException extends RuntimeException {
 
 	private static final long serialVersionUID = 1L;
 
-	public ProductNotFoundException(String productName) {
-		super("No such product: " + productName);
+	public ShopNotFoundProductException(String productName) {
+		super("No such product in the shop: " + productName);
 	}
 }

@@ -1,4 +1,4 @@
-# store-services
+# shop-services
 
 
 ## Using an IDE
@@ -19,12 +19,12 @@ You may find it easier to view the different applications by running them from a
 To do this, open three CMD windows (Windows) or three Terminal windows (MacOS, Linux) and arrange so you can view them conveniently.
 
  1. In each window, change to the directory where you cloned the demo
- 1. In the first window, build the application using `mvn clean package -DskipTests` (if you want using tests you may run two servers _RegistrationService_, _ProductsService_)
- 1. In the same window run: `java -jar store-microservices-1.1.0.RELEASE.jar registration` and wait for it to start up
- 1. Switch to the second window and run: `java -jar store-microservices-1.1.0.RELEASE.jar products` and again wait for
+ 2. In the first window, build the application using `mvn clean package -DskipTests` (if you want using tests you may run two servers _RegistrationService_, _ProductsService_)
+ 3. In the same window run: `java -jar store-microservices-1.1.0.RELEASE.jar registration` and wait for it to start up
+ 4. Switch to the second window and run: `java -jar store-microservices-1.1.0.RELEASE.jar products` and again wait for
  it to start up
- 1. In the third window run: `java -jar store-microservices-1.1.0.RELEASE.jar shop`
- 1. In your favorite browser open the same three links: [http://localhost:1111](http://localhost:1111) , [http://localhost:4444](http://localhost:4444) and [http://localhost:2222](http://localhost:2222) 
-
+ 5. In the third window run: `java -jar shop-microservices-1.1.0.RELEASE.jar`
+ 6. In your favorite browser open the same three links: [http://localhost:1111](http://localhost:1111) , [http://localhost:4444](http://localhost:4444) and [http://localhost:2222](http://localhost:2222) 
+ 7. Add in hosts localhost my-eureka-server.com
 You should see servers being registered in the log output of the first (registration) window.
-
+ 

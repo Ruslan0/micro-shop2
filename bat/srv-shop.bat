@@ -1,1 +1,0 @@
-java -jar ..\target\store-microservices-1.1.0.RELEASE.jar shop

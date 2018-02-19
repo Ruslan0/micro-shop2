@@ -14,7 +14,7 @@
 
 	<properties>
 		<!-- Stand-alone RESTFul application for testing only -->
-		<start-class>store.microservices.services.Main</start-class>
+		<start-class>store.microservices.services.ShopServer</start-class>
 	</properties>
 
 	<dependencies>

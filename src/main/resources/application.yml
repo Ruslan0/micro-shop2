@@ -7,6 +7,7 @@ spring:
   thymeleaf:
     cache: false             # Allow Thymeleaf templates to be reloaded at runtime
     prefix: classpath:/shop-server/templates/    # Trailing / mandatory
+ 
                              # Template location for this application only
 
 # Map the error path to error template (for Thymeleaf)
@@ -36,3 +37,5 @@ eureka:
 #     NOTE-1: spring.application.instance_id is only set when run on Cloud Foundry,
 #             so we fallback on the server-port when it is not defined
 #     NOTE-2: Syntax ${x:${y}} = use $x if set, otherwise use $y
+endpointUrl: http://localhost:4444
+ 

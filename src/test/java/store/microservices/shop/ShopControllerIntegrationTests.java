@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import store.microservices.services.shop.ShopServer;
+import store.microservices.services.ShopServer;
 
 /**
  * Imitates the {@link ShopServer}, but without using any of the discovery

@@ -1,14 +1,9 @@
-package store.microservices.services.shop;
+package store.microservices.services;
 
-import java.util.logging.Logger;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.context.annotation.Import;
-
-import store.microservices.shop.ShopConfiguration;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * Run as a micro-service, registering with the Discovery Server (Eureka).
@@ -20,11 +15,8 @@ import store.microservices.shop.ShopConfiguration;
  */
 @EnableAutoConfiguration
 @EnableDiscoveryClient
-@Import(ShopConfiguration.class)
+@ComponentScan("store.microservices.shop")
 public class ShopServer {
-
-	protected Logger logger = Logger.getLogger(ShopServer.class.getName());
-
 	/**
 	 * Run the application using Spring Boot and an embedded servlet engine.
 	 * 
@@ -32,10 +24,6 @@ public class ShopServer {
 	 *            Program arguments - ignored.
 	 */
 	public static void main(String[] args) {
-		// Tell server to look for Products-server.properties or
-		// Products-server.yml
-		System.setProperty("spring.config.name", "shop-server");
-
 		SpringApplication.run(ShopServer.class, args);
 	}
 }
