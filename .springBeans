@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.2.201712210913-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>java:store.microservices.services.shop.ShopServer</config>
+	</configs>
+	<autoconfigs>
+		<config>java:store.microservices.products.ProductsMain</config>
+		<config>java:store.microservices.shop.ShopMain</config>
+	</autoconfigs>
+	<configSets>
+		<configSet>
+			<name><![CDATA[system]]></name>
+			<allowBeanDefinitionOverriding>true</allowBeanDefinitionOverriding>
+			<incomplete>false</incomplete>
+			<configs>
+			</configs>
+			<profiles>
+			</profiles>
+		</configSet>
+	</configSets>
+</beansProjectDescription>
