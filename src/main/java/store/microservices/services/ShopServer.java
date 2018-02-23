@@ -8,9 +8,6 @@ import org.springframework.context.annotation.ComponentScan;
 /**
  * Run as a micro-service, registering with the Discovery Server (Eureka).
  * <p>
- * Note that the configuration for this application is imported from
- * {@link ProductsConfiguration}. This is a deliberate separation of concerns.
- * 
  * @author Ruslan Paluektau
  */
 @EnableAutoConfiguration
