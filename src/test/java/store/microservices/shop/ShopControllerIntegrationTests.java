@@ -19,9 +19,6 @@ import store.microservices.services.ShopServer;
 @SpringBootApplication
 class ShopMain {
 	public static void main(String[] args) {
-		// Tell server to look for Shop-server.properties or
-		// Shop-server.yml
-		System.setProperty("spring.config.name", "Shop-server");
 		SpringApplication.run(ShopMain.class, args);
 	}
 }
